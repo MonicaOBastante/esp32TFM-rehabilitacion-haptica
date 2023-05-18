@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "cwd": "${workspaceRoot}",
+      "name": "Sparkfun",
+      "request": "launch",
+      
+      "type": "cortex-debug",
+      "executable": "C:\\Users\\usuario\\AppData\\Local\\Temp\\arduino\\sketches\\E85B728A74416E223E607E182C2183D2/sketch_apr15a.ino.elf",
+      "servertype": "openocd",
+      "serverpath": "C:\\Users\\usuario\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\openocd-esp32\\v0.11.0-esp32-20221026/bin/openocd",
+      "armToolchainPath": "C:\\Users\\usuario\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\xtensa-esp32-elf-gcc\\esp-2021r2-patch5-8.4.0/bin/",
+      "configFiles": [
+        "debug.cfg"
+      ]
+    }
+  ]
+}
