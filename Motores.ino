@@ -71,7 +71,7 @@ void todos(int intervalo){
 }
 
 //abajo, los dos centrales, solo arriba. Vuelta a empezar 
-void arriba(int tiempo){
+void abajo(int tiempo){
   
   Serial.println("Arriba");
   digitalWrite(motor6, HIGH);
@@ -87,7 +87,7 @@ void arriba(int tiempo){
 }
 
 //arriba, los dos centrales, solo abajo. Vuelta a empezar 
-void abajo(int tiempo){
+void arriba(int tiempo){
   Serial.println("Abajo");
   digitalWrite(motor1, HIGH);
   digitalWrite(motor2, HIGH);
@@ -100,7 +100,7 @@ void abajo(int tiempo){
 }
 
 //vibra motor de la izquierda, empuja el brazo
-void derecha(int tiempo){
+void izquierda(int tiempo){
   
   Serial.println("Derecha");
   digitalWrite(motor5, HIGH);
@@ -110,7 +110,7 @@ void derecha(int tiempo){
 }
 
 //vibra motor de la derecha, empuja el brazo
-void izquierda(int tiempo){
+void derecha(int tiempo){
   Serial.println("Izquierda");
   digitalWrite(motor4, HIGH);
   delay(tiempo);
@@ -269,10 +269,10 @@ void loop(){
           case 54://6
             rotarIzq(tiempo);
             break;
-          case 55:
+          case 55://7
             doblar(tiempo);
             break;
-          case 56:
+          case 56://8
             desdoblar(tiempo);
             break;
           default:
